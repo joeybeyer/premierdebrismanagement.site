@@ -8,11 +8,34 @@ export const generateLocalBusinessSchema = () => ({
   '@type': ['LocalBusiness', 'ProfessionalService'],
   '@id': `${SITE_URL}/#business`,
   name: SITE_NAME,
-  description: 'Professional dumpster rental services for construction, renovation, and cleanout projects. Same-day delivery available.',
+  description: 'Professional dumpster rental services for construction, renovation, and cleanout projects in Bakersfield and Kern County, CA. Same-day delivery available.',
   url: SITE_URL,
   telephone: getTrackingNumber(),
   priceRange: '$$',
-  areaServed: 'United States',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '1901 Truxtun Ave',
+    addressLocality: 'Bakersfield',
+    addressRegion: 'CA',
+    postalCode: '93301',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 35.3733,
+    longitude: -119.0187,
+  },
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Bakersfield',
+      containedInPlace: { '@type': 'State', name: 'California' },
+    },
+    {
+      '@type': 'AdministrativeArea',
+      name: 'Kern County',
+    },
+  ],
   serviceType: [
     'Dumpster Rental',
     'Roll-Off Container Rental',

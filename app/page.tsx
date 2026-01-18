@@ -17,7 +17,7 @@ export default function HomePage() {
 
       <Hero
         title="Dumpster Rental Services"
-        subtitle="Professional roll-off dumpster rentals for construction, renovation, and cleanout projects. Same-day delivery available in 50+ metros."
+        subtitle="Professional roll-off dumpster rentals for construction, renovation, and cleanout projects. Same-day delivery available throughout Kern County."
       />
 
       {/* Intro paragraph with internal links - critical for SEO */}
@@ -29,7 +29,7 @@ export default function HomePage() {
               <Link href="/dumpster-rental/" className="text-amber-600 hover:text-amber-700">
                 dumpster rental services
               </Link>{' '}
-              for homeowners, contractors, and property managers across the United States.
+              for homeowners, contractors, and property managers throughout Bakersfield and Kern County, California.
               Whether you need a compact{' '}
               <Link href="/10-yard-dumpster/" className="text-amber-600 hover:text-amber-700">
                 10-yard dumpster
@@ -41,15 +41,19 @@ export default function HomePage() {
               for commercial construction, we have the right size for your project.
             </p>
             <p>
-              We serve major metropolitan areas including{' '}
-              <Link href="/houston/" className="text-amber-600 hover:text-amber-700">
-                Houston
+              We proudly serve{' '}
+              <Link href="/bakersfield/" className="text-amber-600 hover:text-amber-700">
+                Bakersfield
+              </Link>{' '}
+              and the surrounding Kern County area including{' '}
+              <Link href="/delano/" className="text-amber-600 hover:text-amber-700">
+                Delano
               </Link>,{' '}
-              <Link href="/phoenix/" className="text-amber-600 hover:text-amber-700">
-                Phoenix
+              <Link href="/tehachapi/" className="text-amber-600 hover:text-amber-700">
+                Tehachapi
               </Link>,{' '}
-              <Link href="/dallas/" className="text-amber-600 hover:text-amber-700">
-                Dallas
+              <Link href="/shafter/" className="text-amber-600 hover:text-amber-700">
+                Shafter
               </Link>, and more with same-day delivery available when you call before noon.
             </p>
           </div>

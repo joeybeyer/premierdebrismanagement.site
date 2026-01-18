@@ -17,11 +17,11 @@ const footerLinks = {
     { name: 'Demolition Dumpster', href: '/demolition-dumpster/' },
   ],
   locations: [
-    { name: 'Houston, TX', href: '/houston/' },
-    { name: 'Phoenix, AZ', href: '/phoenix/' },
-    { name: 'Dallas, TX', href: '/dallas/' },
-    { name: 'Atlanta, GA', href: '/atlanta/' },
-    { name: 'Miami, FL', href: '/miami/' },
+    { name: 'Bakersfield, CA', href: '/bakersfield/' },
+    { name: 'Delano, CA', href: '/delano/' },
+    { name: 'Tehachapi, CA', href: '/tehachapi/' },
+    { name: 'Shafter, CA', href: '/shafter/' },
+    { name: 'Wasco, CA', href: '/wasco/' },
   ],
   company: [
     { name: 'About Us', href: '/about/' },
@@ -66,6 +66,13 @@ export const Footer = () => {
                 <Mail className="w-4 h-4" />
                 info@premierdebrismanagement.site
               </a>
+              <div className="flex items-start gap-2 text-slate-400">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>
+                  1901 Truxtun Ave<br />
+                  Bakersfield, CA 93301
+                </span>
+              </div>
             </div>
           </div>
 

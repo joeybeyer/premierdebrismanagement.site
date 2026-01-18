@@ -1,5 +1,5 @@
 export const getTrackingNumber = (): string => {
-  return process.env.NEXT_PUBLIC_TRACKING_NUMBER || '(888) 555-0199'
+  return process.env.NEXT_PUBLIC_TRACKING_NUMBER || '(661) 386-7816'
 }
 
 export const formatPhoneForTel = (phone: string): string => {
