@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import { Phone, Mail, Clock } from 'lucide-react'
+import { Phone, Mail, Clock, MapPin } from 'lucide-react'
 import { Breadcrumbs } from '@/components/seo/Breadcrumbs'
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { PhoneButton } from '@/components/ui/PhoneButton'
@@ -97,6 +97,35 @@ export default function ContactPage() {
                   delivered the same day in most service areas.
                 </p>
                 <PhoneButton variant="primary" size="lg" />
+              </div>
+
+              {/* Location */}
+              <div className="mt-8">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-amber-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1">Our Location</h3>
+                    <p className="text-slate-600">
+                      1901 Truxtun Ave
+                      <br />
+                      Bakersfield, CA 93301
+                    </p>
+                  </div>
+                </div>
+                <div className="rounded-xl overflow-hidden border border-slate-200">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26026.391768271507!2d-119.0238264!3d35.3730402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea69992fd81f43%3A0x5ffd6659f9c8ce47!2sPremier%20Debris%20Management!5e0!3m2!1sen!2sus!4v1768708352892!5m2!1sen!2sus"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Premier Debris Management Location"
+                  />
+                </div>
               </div>
             </div>
 
