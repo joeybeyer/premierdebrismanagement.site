@@ -1,0 +1,7 @@
+export { Hero } from './Hero'
+export { SizeComparison } from './SizeComparison'
+export { UseCases } from './UseCases'
+export { ServiceAreas } from './ServiceAreas'
+export { Testimonials } from './Testimonials'
+export { FAQ } from './FAQ'
+export { CTA } from './CTA'
